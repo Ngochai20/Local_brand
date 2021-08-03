@@ -1,0 +1,73 @@
+<main>
+    <div class="wrapper" style="margin-top: 100px;">
+        <div class="container">
+            <div id="detail">
+                <div class="detail-primary">
+                    <div class="detail-left">
+                        <div class="left-bg">
+
+                        </div>
+                        <div class="left-line">
+
+                        </div>
+                        <div class="left-avt">
+                            <img src="/images/images_ds/{{brandss.image}}" alt="">
+                        </div>
+                        <div class="left-icon">
+                            <a href="{{brandss.facebook}}" title="facebook" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                            <a href="{{brandss.tiktok}}" title="tiktok" target="_blank"><i class="fab fa-tiktok"></i></a>
+                            <a href="{{brandss.youtube}}" title="youtube" target="_blank"><i class="fab fa-youtube"></i></a>
+                            <a href="{{brandss.instagram}}" title="instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="{{brandss.website}}" title="google" target="_blank"><i class="fab fa-google"></i></a>
+                        </div>
+                    </div>
+                    <div class="detail-right" style="color:rgb(177, 172, 172);">
+                        <h2 class="right-title" style="font-size:40px; ">{{brandss.name}} VIET NAM</h2>
+                        <p class="right-content" style="overflow: hidden;text-overflow: ellipsis;line-height: 25px;-webkit-line-clamp: 8;display: -webkit-box;-webkit-box-orient: vertical;">
+                            {{brandss.description}}
+                        </p>
+                        <p class="right-address">
+                            <lord-icon class="lord-icon" src="/js/map.json" colors="primary:#fff,secondary:#000000">
+                            </lord-icon>
+                            {{brandss.address}}
+                        </p>
+                    </div>
+                </div>
+                <div class="detail-txt-ft">
+                    <p>{{brandss.name}} VIET NAM {{brandss.name}} VIET NAM</p>
+                </div>
+                <div class="detail-slide">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            {{#each brands}}
+                            <div class="swiper-slide">
+                                <a href="/danh-sach-brand/{{this.name}}">
+                                    <img src="/images/images_ds/{{this.image}}" alt="logo">
+                                </a>
+                            </div>
+                            {{/each}}
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script src="/js/swiper-bundle.js"></script>
+<script src="/js/swiper-bundle.min.js"></script>
+<script src="/js/gsap.3.6.1.min.js"></script>
+<script src="/js/lord-icon-2.0.2.js"></script>
+<script src="/js/jquery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/jquery.scrollUp.min.js"></script>
+<script src="/js/price-range.js"></script>
+<script src="/js/jquery.prettyPhoto.js"></script>
+<script src="/js/home.js"></script>
+<script src="/js/news.js"></script>
+<script src="/js/detailnews.js"></script>
+<script src="/js/brands.js"></script>
+<script src="/js/detailbrands.js"></script>
+<script src="/js/contacts.js"></script>

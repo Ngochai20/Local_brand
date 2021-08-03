@@ -1,0 +1,40 @@
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.0.10/css/all.css">
+
+<!-- title -->
+      <div class="title-page" style="margin-top: 30px;">
+          <div class="item-page">   
+              <p style="font-size: 25px;">DANH SÁCH</p>
+              <p>Trang chủ &nbsp;/ &nbsp;Danh sách</p>
+          </div>
+      </div>
+<!-- content -->
+      <section style="align-items: center;">
+        <div id="" class="grid-container">
+            {{#each brands}}
+            <div class="grid-item">
+                <div class="items-card">
+                    <img src="images/images_ds/{{this.image}}" alt="logo" >
+                    <div class="card-text">
+                      {{!-- <h4><b>{{this.name}}</b></h4> --}} 
+                      <h4><b><a href="/danh-sach-brand/{{this.name}}">{{this.name}}</a></b></h4>
+                      <p style="overflow: hidden;text-overflow: ellipsis;line-height: 25px;-webkit-line-clamp: 3;display: -webkit-box;-webkit-box-orient: vertical;">{{this.description}}</p>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+           
+        </div>
+        {{!-- panigation --}}
+        <div class="pagination">
+            <a href="#"> <i class="fas fa-angle-double-left"></i> </a>
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">  <i class="fas fa-angle-double-right"></i> </a>
+        </div>
+      </section>
+<div class="gototop js-top">
+    <a href="#" class="js-gotop"><i class="fa fa-arrow-up"></i></a>
+</div>
